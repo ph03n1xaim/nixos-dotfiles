@@ -8,11 +8,13 @@
     neofetch
     cmatrix
     fd
+    rename
     xorg.xsetroot
     htop
     scrot
     devour
     cmake
+    unixtools.column
     gnumake
     libtool
     betterlockscreen
@@ -20,10 +22,13 @@
     zathura
     brave
     firefox
+    libreoffice
     slack
     gimp
+    xournal
     openjdk
     gcc
+    python3
     nodejs
     rPackages.npm
     rustup

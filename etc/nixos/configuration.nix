@@ -12,6 +12,9 @@
 
   # nixpkgs.config.allowUnfree = true;
 
+  # Kernel Version
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -130,10 +133,14 @@
       picom
       feh
       alsa-utils
+      pavucontrol
       brightnessctl
       libnotify
       dunst
       networkmanagerapplet
+      pmutils
+      xfce.xfce4-power-manager
+      xfce.xfconf
       easyeffects
     ];
   };
@@ -183,6 +190,9 @@
 
   # GVFS
   services.gvfs.enable = true;
+
+  # Upower
+  services.upower.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
