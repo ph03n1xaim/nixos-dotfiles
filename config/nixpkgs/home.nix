@@ -34,6 +34,11 @@
     rustup
     flutter
     android-studio
+    appimage-run
+    gparted
+    mpv
+    xclip
+    rclone
   ];
 
   programs.neovim = {
